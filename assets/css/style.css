@@ -3,8 +3,12 @@ html {
 }
 
 body {
-    font-family: sans-serif;
-    padding: 1rem;
+/*    font-family: 'Nunito Sans', sans-serif;
+	font-family: 'Domine', serif;
+	font-family: 'Crimson Text', serif;
+	font-family: 'Lato', sans-serif;
+*/    
+	padding: 1rem;
 }
 
 iframe {
