@@ -1,27 +1,27 @@
 /* Fullscreen */
 
 html {
-    background-color: #ffffff;
+	background-color: #ffffff;
 }
 
 body {
-    font-family: 'Nunito Sans', sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
 	font-family: 'Domine', serif;
 	font-family: 'Crimson Text', serif;
 	font-family: 'Lato', sans-serif;
-    padding: 1rem;
+	padding: 1rem;
 }
 
 iframe {
-    background-color: #ffffff;
+	background-color: #ffffff;
 }
 
 /*---------------------*/
 
 .body {
-  display: grid;
-  grid-template-rows: auto auto auto;
-  grid-gap: 0.2rem;
+	display: grid;
+	grid-template-rows: auto auto auto;
+	grid-gap: 0.2rem;
 }
 
 /*--------------------*/
@@ -46,6 +46,10 @@ iframe {
 /*--------------------*/
 
 .main {
+	background-color: green;
+}
+
+.main_eventos {
 	background-color: green;
 }
 
