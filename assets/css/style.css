@@ -1,16 +1,74 @@
+/* Fullscreen */
+
 html {
     background-color: #ffffff;
 }
 
 body {
-/*    font-family: 'Nunito Sans', sans-serif;
-	font-family: 'Domine', serif;
-	font-family: 'Crimson Text', serif;
-	font-family: 'Lato', sans-serif;
-*/    
-	padding: 1rem;
+    font-family: sans-serif;
+    padding: 1rem;
 }
 
 iframe {
     background-color: #ffffff;
 }
+
+/*---------------------*/
+
+.body {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-gap: 0.2rem;
+}
+
+/*--------------------*/
+
+.header {
+	display: flex;
+	background-color: red;
+}
+
+.title {
+	font-size: 2rem;
+	font-weight: bold;
+	justify-content: center;
+}
+
+.threelines {
+	width: 10%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+/*--------------------*/
+
+.main {
+	background-color: green;
+}
+
+/*--------------------*/
+
+.access {
+	background-color: yellow;
+	display: flex;
+	justify-content: space-around;
+	justify-content: center
+}
+
+.return-button {
+	width: 25%;
+}
+
+.calendar-button {
+	width: 25%;
+}
+
+.eventos-button {
+	width: 25%;
+}
+
+.home-button {
+	width: 25%;
+}
+
+/*--------------------*/
