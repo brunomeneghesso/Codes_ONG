@@ -37,19 +37,40 @@ iframe {
 	justify-content: center;
 }
 
-.threelines {
-	width: 10%;
-	display: flex;
-	justify-content: flex-end;
-}
-
 /*--------------------*/
 
 .main {
 	background-color: green;
 }
 
-/*----------EVENTOS----------*/
+/*--------------------*/
+
+.access {
+	display: flex;
+	justify-content: space-around;
+	justify-content: center;
+	background-color: yellow;
+}
+
+.return-button {
+	width: 25%;
+}
+
+.calendar-button {
+	width: 25%;
+}
+
+.eventos-button {
+	width: 25%;
+}
+
+.home-button {
+	width: 25%;
+}
+
+/*--------------------*/
+
+/*------EVENTOS------*/
 
 .main_eventos {
 	background-color: green;
@@ -109,30 +130,3 @@ iframe {
 .lista-image {
 
 }
-
-/*--------------------*/
-
-.access {
-	background-color: yellow;
-	display: flex;
-	justify-content: space-around;
-	justify-content: center
-}
-
-.return-button {
-	width: 25%;
-}
-
-.calendar-button {
-	width: 25%;
-}
-
-.eventos-button {
-	width: 25%;
-}
-
-.home-button {
-	width: 25%;
-}
-
-/*--------------------*/
