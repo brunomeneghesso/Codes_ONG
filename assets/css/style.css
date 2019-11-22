@@ -63,8 +63,9 @@ iframe {
 	margin-top: 5%;
 }
 
-.lista-eventos {
-
+.filtro {
+	width: 1.5rem;
+	height: 1.5rem;
 }
 
 .link-image {
@@ -73,10 +74,8 @@ iframe {
 
 .lista-image {
 	padding: 5%;
-	/*width: 90%;*/
 	max-height: 8rem;
 	width: 19.5rem;
-
 }
 
 .evento-title {
@@ -96,9 +95,12 @@ iframe {
 .evento-descricao li {
 	display: flex;
 	flex-direction: row;
+	padding: 0.15rem;
 }
-.evento-informacao {
-	font-weight: bold;
+
+.informacao-icon {
+	width: 1rem;
+	height: 1rem;
 }
 
 .lista-image {
