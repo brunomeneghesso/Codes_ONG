@@ -49,8 +49,60 @@ iframe {
 	background-color: green;
 }
 
+/*----------EVENTOS----------*/
+
 .main_eventos {
 	background-color: green;
+}
+
+.eventos-title {
+	font-size: 2rem;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
+}
+
+.lista-eventos {
+
+}
+
+.link-image {
+
+}
+
+.lista-image {
+	padding: 5%;
+	/*width: 90%;*/
+	max-height: 8rem;
+	width: 19.5rem;
+
+}
+
+.evento-title {
+	font-size: 1rem;
+	margin-left: 5%;
+	margin-top: -3%;
+}
+
+.evento-descricao {
+	font-size: 0.75rem;
+	display: grid;
+	margin-top: 1%;
+	margin-left: 5%;
+	margin-bottom: 5%;
+}
+
+.evento-descricao li {
+	display: flex;
+	flex-direction: row;
+}
+.evento-informacao {
+	font-weight: bold;
+}
+
+.lista-image {
+
 }
 
 /*--------------------*/
