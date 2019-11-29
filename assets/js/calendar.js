@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
   let db = coDesConnect('https://togepi-91fe9.firebaseio.com/')
 
   db.download('/', function(data) {
-    if(typeof(params['anterior']) == 'undefined' || params['anterior'].length == 0){
-        if(typeof(params['anteriores']) == 'undefined'){
+    if(typeof(params['anterior']) == 'undefined' ){
+        if(typeof(params['anteriores']) == 'undefined'|| params['anteriores'].length == 0){
           context = {'return' : 'main',
           'no_antigos':true,
           'no_keep_return':true,
@@ -32,20 +32,18 @@ document.addEventListener('DOMContentLoaded', function() {
         'keep_return':false}
       }
       else{
-
+        let antigos = params['anteriores']
+        antigos.push(params['anterior'])
         context = {'return' : params['anterior'],
-        'antigos':[params['anteriores'].push(params['anterior'])],
+        'antigos':antigos,
+        'keep_return': params['anterior'],
         'no_antigos':false,
         'no_keep_return':true,
         'e_antigos':true,
         'keep_return':false}
       }
     }
-  	let antigos = [params['anterior'],params['anteriores']]
-    context = {'return' : antigos[0],
-				'antigos':antigos,
-				'keep_return':antigos.slice(1,)}
-
+  	
     coDesReplace('.access', context)
 
   })
