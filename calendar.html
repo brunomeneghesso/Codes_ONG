@@ -131,17 +131,9 @@
     </main>
 
     <access class="access">
-        {{#if no_keep_return}}
-            <a href="{{return}}.html">
+            <a href="{{return}}.html?anterior=calendar">
                 <img class="return-button" src="assets/img/return.png" alt="return">
             </a>
-        {{/if}}
-        {{if e_keep_return}}
-            <a href="{{return}}.html?anteriores={{keep_return}}">
-                <img class="return-button" src="assets/img/return.png" alt="return">
-            </a>
-        {{/if}}
-        {{#if no_antigos}}
             <a href="calendar.html?anterior=calendar">
                 <img class="calendar-button" src="assets/img/calendar.png" alt="calendar">
             </a>
@@ -151,18 +143,6 @@
             <a href="main.html?anterior=calendar">
                 <img class="home-button" src="assets/img/home.png" alt="tela principal">
             </a>
-        {{/if}}
-        {{#if e_antigos}}
-            <a href="calendar.html?anterior=calendar,anteriores={{antigos}}">
-                <img class="calendar-button" src="assets/img/calendar.png" alt="calendar">
-            </a>
-            <a href="eventos.html?anterior=calendar,anteriores={{antigos}}">
-                <img class="eventos-button" src="assets/img/events.png" alt="eventos">
-            </a>
-            <a href="main.html?anterior=calendar,anteriores={{antigos}}">
-                <img class="home-button" src="assets/img/home.png" alt="tela principal">
-            </a>
-        {{/if}}
     </access>
 </body>
 </html>
