@@ -172,11 +172,10 @@ iframe {
 }
 
 .filtro-categorias{
-	/*font-family: */
 	font-size: 1rem;
 	display: grid;
 	margin-top: 1.25%;
-	margin-left: 5%;
+	margin-left: 8%;
 	margin-bottom: 5%;
 }
 
@@ -215,113 +214,18 @@ iframe {
 	margin-top: 0.1rem;
 }
 
-/* Checkbox*/
-
-.checkmark {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 15px;
-	width: 15px;
-	background-color: #eee;
-}
-
-.checkmark:after {
-	content: "";
-	position: absolute;
-	display: none;
-}
-
-.filtro-container {
-	display: block;
-	position: relative;
-	padding-left: 20px;
-	margin-bottom: 5px; 
-	cursor: pointer;
-	font-size: 15px;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-
 .filtro-container input {
 	position: absolute;
-	opacity: 0;
+	opacity: 10;
 	cursor: pointer;
-	height: 0;
-	width: 0;
-}
-
-.filtro-container:hover input ~ .checkmark {
-	background-color: #ccc;
-}
-
-.filtro-container input:checked ~ .checkmark {
-	background-color: #2196F3;
-}
-
-.filtro-container input:checked ~ .checkmark:after {
-	display: block;
-}
-
-.filro-container .checkmark:after {
-	left: 15px;
-	top: 2.5px;
-	width: 3px;
-	height: 6px;
-	border: solid white;
-	border-width: 0 3px 3px 0;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-
-.sub-filtro-container {
-	display: block;
-	position: relative;
-	padding-left: 20px;
-	margin-bottom: 5px;
-	cursor: pointer;
-	font-size: 10px;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+	left: 0.8rem;
 }
 
 .sub-filtro-container input {
 	position: absolute;
-	opacity: 0;
+	opacity: 10;
 	cursor: pointer;
-	height: 0;
-	width: 0;
+	left: 5.3rem;
 }
-
-.sub-filtro-container:hover input ~ .checkmark {
-	background-color: #ccc;
-}
-
-.sub-filtro-container input:checked ~ .checkmark {
-	background-color: #2196F3;
-}
-
-.sub-filtro-container input:checked ~ .checkmark:after {
-	display: block;
-}
-
-.sub-filtro-container .checkmark:after {
-	left: 5px;
-	top: 2.5px;
-	width: 3px;
-	height: 6px;
-	border: solid white;
-	border-width: 0 3px 3px 0;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-
-
 
 /*--------------------*/
