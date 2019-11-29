@@ -4,7 +4,11 @@ document.addEventListener('DOMContentLoaded', function() {
   let db = coDesConnect('https://togepi-91fe9.firebaseio.com/')
 
   db.download('/', function(data) {
-    context = {'return' : params['anterior']}
+  	let antigos = [params['anterior'],params['anteriores']]
+    context = {'return' : antigos[0],
+				'antigos':antigos,
+				'keep_return':antigos.slice(1,)}
+
     coDesReplace('.access', context)
 
   })
