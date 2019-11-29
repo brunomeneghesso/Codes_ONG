@@ -101,7 +101,7 @@ iframe {
 	font-weight: bold;
 	display: flex;
 	justify-content: center;
-	margin-top: 5%;
+	margin-top: 5rem;
 }
 
 .filtro {
@@ -110,7 +110,7 @@ iframe {
 	width: 1.5rem;
 	height: 1.5rem;
 	margin-left: 21rem;
-	margin-top: -1.8rem;
+	margin-top: 3rem;
 }
 
 .link-image {
@@ -165,18 +165,20 @@ iframe {
 	font-weight: bold;
 	display: flex;
 	justify-content: center;
-	margin-top: 5%;
+	margin-top: 5rem;
 }
 
 .ok {
 	margin-left: 21rem;
-	margin-top: -1.8rem;
+	/*margin-top: 10rem;*/
+	margin-bottom: 10rem;
+
 }
 
 .filtro-categorias{
 	font-size: 1rem;
 	display: grid;
-	margin-top: 1.25%;
+	margin-top: 2rem;
 	margin-left: 8%;
 	margin-bottom: 5%;
 }
