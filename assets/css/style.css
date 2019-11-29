@@ -114,7 +114,8 @@ iframe {
 }
 
 .link-image {
-
+	display: flex;
+	justify-content: center;
 }
 
 .lista-image {
@@ -125,7 +126,7 @@ iframe {
 
 .evento-title {
 	font-size: 1.25rem;
-	margin-left: 5%;
+	margin-left: 8%;
 	margin-top: -3%;
 }
 
@@ -133,8 +134,9 @@ iframe {
 	font-size: 0.75rem;
 	display: grid;
 	margin-top: 1.25%;
-	margin-left: 5%;
+	margin-left: 8%;
 	margin-bottom: 5%;
+	margin-right: 8%;
 }
 
 .evento-descricao li {
