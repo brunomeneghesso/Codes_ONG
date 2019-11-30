@@ -15,10 +15,23 @@
     <script src="assets/js/calendar.js"></script>
 
 </head>
+
+<style type="text/css">
+    a:link {text-decoration: none}
+    a:visited {text-decoration: none}
+    a:hover {text-decoration: underline;  
+    color: #FF0000;}
+    a:active {text-decoration: none}
+</style>
+
 <body>
     <header class="header">
         <a href="main.html">
-            <h1 class="title">Calendário</h1>
+            <div class="logo-title">Togepi</div>
+        </a>
+
+        <a href="main.html">
+            <img class="logo" src="assets/img/togepi2.png">
         </a>
     </header>
 
@@ -131,18 +144,18 @@
     </main>
 
     <access class="access">
-            <a href="{{return}}.html?anterior=calendar,filtrado={{filtrado}}">
-                <img class="return-button" src="assets/img/return.png" alt="return">
-            </a>
-            <a href="calendar.html?anterior=calendar,filtrado={{filtrado}}">
-                <img class="calendar-button" src="assets/img/calendar.png" alt="calendar">
-            </a>
-            <a href="{{ev}}.html?anterior=calendar,filtrado={{filtrado}}">
-                <img class="eventos-button" src="assets/img/events.png" alt="eventos">
-            </a>
-            <a href="main.html?anterior=calendar,filtrado={{filtrado}}">
-                <img class="home-button" src="assets/img/home.png" alt="tela principal">
-            </a>
+
+        <a href="calendar.html?anterior=main">
+            <img class="calendar-button" src="assets/img/calendar.png" alt="calendar">
+        </a>
+
+        <a href="eventos.html?anterior=main">
+            <img class="events-button" src="assets/img/events.png" alt="eventos">
+        </a>
+        
+        <a href="main.html?anterior=main">
+            <img class="home-button" src="assets/img/home.png" alt="tela principal">
+        </a>
     </access>
 </body>
 </html>

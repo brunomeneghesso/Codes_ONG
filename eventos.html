@@ -10,23 +10,34 @@
 	<script src="assets/js/codes.js"></script>
 	<script src="assets/js/eventos.js"></script>
 </head>
-<header class="header">
-	<a href="main.html">
-		<a>
-			<img class="icon" src="assets/img/togepi.png" alt="logo togepi"> 
-		</a>
-	</a>
-</header>
+
+<style type="text/css">
+    a:link {text-decoration: none}
+    a:visited {text-decoration: none}
+    a:hover {text-decoration: underline;  
+    color: #FF0000;}
+    a:active {text-decoration: none}
+</style>
+
 <body class="body">
-	<main class="main_eventos">
+	<header class="header">
+		<a href="main.html">
+            <div class="logo-title">Togepi</div>
+        </a>
+
+        <a href="main.html">
+            <img class="logo" src="assets/img/togepi2.png">
+        </a>
+	</header>
+
+	<main class="main">
 		<div class="eventos-title">
-			EVENTOS
-		</div>
-		<div>
+			EVENTOS RECOMENDADOS
 			<a href="filtro.html">
 				<img class="filtro" src="assets/img/filter.png" alt="filtro">
 			</a>
 		</div>
+	
 		<a class="link-image">
 			<img class="lista-image" src="assets/img/evento exemplo.jpg" alt="evento crianças"> 
 		</a>
@@ -36,7 +47,7 @@
 		<ul class="evento-descricao">
 			<li>
 				<h2 class="evento-informacao">
-					<img class="informacao-icon" src="assets/img/calendar.png" alt="data">:
+					<img class="informacao-icon" src="assets/img/cal.png" alt="data">:
 				</h2>
 				<p>
 					30/11
@@ -77,7 +88,7 @@
 			<ul class="evento-descricao">
 				<li>
 					<h2 class="evento-informacao">
-						<img class="informacao-icon" src="assets/img/calendar.png" alt="data">:
+						<img class="informacao-icon" src="assets/img/cal.png" alt="data">:
 					</h2>
 					<p>
 						29/10
@@ -108,26 +119,23 @@
 					</p>
 				</li>
 			</ul>
+		</div>
+	</main>
 
-		</main>
+	<access class="access">
 
-		<access class="access">
-			<a href="{{return}}.html?anterior=eventos,filtrado=nao">
-				<img class="return-button" src="assets/img/return.png" alt="return">
-			</a>
+        <a href="calendar.html?anterior=main">
+            <img class="calendar-button" src="assets/img/calendar.png" alt="calendar">
+        </a>
 
-			<a href="calendar.html?anterior=eventos,filtrado=nao">
-				<img class="calendar-button" src="assets/img/calendar.png" alt="calendar">
-			</a>
+        <a href="eventos.html?anterior=main">
+            <img class="events-button" src="assets/img/events.png" alt="eventos">
+        </a>
+        
+        <a href="main.html?anterior=main">
+            <img class="home-button" src="assets/img/home.png" alt="tela principal">
+        </a>
+    </access>
 
-			<a href="eventos.html?anterior=eventos,filtrado=nao">
-				<img class="eventos-button" src="assets/img/events.png" alt="eventos">
-			</a>
-
-			<a href="main.html?anterior=eventos,filtrado=nao">
-				<img class="home-button" src="assets/img/home.png" alt="tela principal">
-			</a>
-		</access>
-
-	</body>
-	</html>
+</body>
+</html>

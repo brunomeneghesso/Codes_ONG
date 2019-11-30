@@ -10,116 +10,127 @@
 	<script src="assets/js/codes.js"></script>
 	<script src="assets/js/eventos.js"></script>
 </head>
-<header class="header">
-	<a href="main.html">
-		<a>
-			<img class="icon" src="assets/img/togepi.png" alt="logo togepi"> 
-		</a>
-	</a>
-</header>
+
+<style type="text/css">
+    a:link {text-decoration: none}
+    a:visited {text-decoration: none}
+    a:hover {text-decoration: underline;  
+    color: #FF0000;}
+    a:active {text-decoration: none}
+</style>
+
 <body class="body">
-	<main class="main-eventos">
-		<div class="filtro-title">
-			FILTRO
+	<header class="header">
+		<a href="main.html">
+            <div class="logo-title">Togepi</div>
+        </a>
+
+        <a href="main.html">
+            <img class="logo" src="assets/img/togepi2.png">
+        </a>
+	</header>
+
+
+	<main class="main">
+		<div class="main-eventos">
+			<div class="filtro-title">
+				FILTRO
+
+				<a class="ok" href="eventos-filtro.html">
+					OK!
+				</a>
+			</div>
+				<ul class="filtro-categorias">
+					<li>
+						<label class="filtro-container">- PONTUAL
+							<input type="checkbox">
+							<span class="checkmark"></span>
+						</label>
+					</li>
+					<li>
+						<label class="filtro-container">- RECORRENTE
+							<input type="checkbox">
+							<span class="checkmark"></span>
+						</label>
+					</li>
+					<li>
+						- CAUSAS
+						<ul class="filtro-causas">
+							<li>
+								<label class="sub-filtro-container">Educação
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label class="sub-filtro-container">Crianças
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label class="sub-filtro-container">Animais
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label class="sub-filtro-container">Idosos
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label class="sub-filtro-container">Meio Ambiente
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>	
+					</li>
+					<li>
+						- LOCALIZAÇÃO
+						<ul class="filtro-localizacao">
+							<li>
+								<label class="sub-filtro-container">Vila Olímpia
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label class="sub-filtro-container">Consolação
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label class="sub-filtro-container">Morumbi
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>	
+					</li>
+				</ul>
+
+			</div>	
 		</div>
-		<a class="ok" href="eventos-filtro.html?anterior=filtro">
-			OK!
-		</a>	
-		<div>
-			<ul class="filtro-categorias">
-				<li>
-					<label class="filtro-container">PONTUAL
-						<input type="checkbox">
-						<span class="checkmark"></span>
-					</label>
-				</li>
-				<li>
-					<label class="filtro-container">RECORRENTE
-						<input type="checkbox">
-						<span class="checkmark"></span>
-					</label>
-				</li>
-				<li>
-					CAUSAS
-					<ul class="filtro-causas">
-						<li>
-							<label class="sub-filtro-container">Educação
-								<input type="checkbox">
-								<span class="checkmark"></span>
-							</label>
-						</li>
-						<li>
-							<label class="sub-filtro-container">Crianças
-								<input type="checkbox">
-								<span class="checkmark"></span>
-							</label>
-						</li>
-						<li>
-							<label class="sub-filtro-container">Animais
-								<input type="checkbox">
-								<span class="checkmark"></span>
-							</label>
-						</li>
-						<li>
-							<label class="sub-filtro-container">Idosos
-								<input type="checkbox">
-								<span class="checkmark"></span>
-							</label>
-						</li>
-						<li>
-							<label class="sub-filtro-container">Meio Ambiente
-								<input type="checkbox">
-								<span class="checkmark"></span>
-							</label>
-						</li>
-					</ul>	
-				</li>
-				<li>
-					LOCALIZAÇÃO
-					<ul class="filtro-localizacao">
-						<li>
-							<label class="sub-filtro-container">Vila Olímpia
-								<input type="checkbox">
-								<span class="checkmark"></span>
-							</label>
-						</li>
-						<li>
-							<label class="sub-filtro-container">Consolação
-								<input type="checkbox">
-								<span class="checkmark"></span>
-							</label>
-						</li>
-						<li>
-							<label class="sub-filtro-container">Morumbi
-								<input type="checkbox">
-								<span class="checkmark"></span>
-							</label>
-						</li>
-					</ul>	
-				</li>
-			</ul>
-
-		</div>	
-
 	</main>
 
 	<access class="access">
-		<a href="{{return}}.html?anterior=filtro,filtrado=sim">
-			<img class="return-button" src="assets/img/return.png" alt="return">
-		</a>
 
-		<a href="calendar.html?anterior=filtro,filtrado=sim">
-			<img class="calendar-button" src="assets/img/calendar.png" alt="calendar">
-		</a>
+        <a href="calendar.html?anterior=main">
+            <img class="calendar-button" src="assets/img/calendar.png" alt="calendar">
+        </a>
 
-		<a href="eventos-filtro.html?anterior=filtro,filtrado=sim">
-			<img class="eventos-button" src="assets/img/events.png" alt="eventos">
-		</a>
-
-		<a href="main.html?anterior=filtro,filtrado=sim">
-			<img class="home-button" src="assets/img/home.png" alt="tela principal">
-		</a>
-	</access>
+        <a href="eventos.html?anterior=main">
+            <img class="events-button" src="assets/img/events.png" alt="eventos">
+        </a>
+        
+        <a href="main.html?anterior=main">
+            <img class="home-button" src="assets/img/home.png" alt="tela principal">
+        </a>
+    </access>
 
 </body>
 </html>
