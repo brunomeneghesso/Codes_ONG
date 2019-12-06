@@ -1,18 +1,12 @@
 /* FULLSCREEN:; */
 
 html {
-	background-color: #ffffff;
+	background-color: #ffffff ;
 }
 
-body {
-	/*font-family: 'Nunito Sans', sans-serif;
-	font-family: 'Domine', serif;
-	font-family: 'Crimson Text', serif;
-	font-family: 'Lato', sans-serif;*/
-}
 
 iframe {
-	background-color: #ffffff;
+	background-color: #000000;
 }
 
 /*---------------------*/
@@ -21,22 +15,25 @@ iframe {
 	display: grid;
 	grid-template-rows: auto;
 	background-color: black;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /*--------------------*/
 
 .header {
+	color: white;
 	display: flex;
-	justify-content: center;
-	background-color: #34D9BD;
+	width: 100%;
+	top:0;
+	justify-content: space-around;
+	position: fixed;
 }
 
 .logo {
-	width: 12%;
+	width: 15%;
 }
 
 .logo-title {
-	text-transform: uppercase;
 	display: flex;
 	color: black;
 	font-size: 1.7rem;
@@ -47,41 +44,41 @@ iframe {
 /*--------------------*/
 
 .main {
-	background-color: #45F0A2;
+	background-color: #ffffff;
 }
 
 /*--------------------*/
 
 .access {
 	display: flex;
-	justify-content: center;
-
-	background-color: #3CE4F8;
+	background-color: #000000;
+	position: fixed;
+	width:95.5%;
+	bottom: 5px;
+	padding: 0.5em;
+	align-items: center;
+	justify-content: space-around;
+	border-radius: 50px;
 }
 
-.return-button {
-	width: 50%;
-}
 
 .calendar-button {
-	width: 50%;
+	width: 40px;
 }
 
 .events-button {
-	width: 50%;
+	width: 40px;
 }
 
 .home-button {
-	width: 68%;
+	width: 40px;
 }
 
 /*--------------------*/
 
 /*MAIN:*/
 
-.main_eventos {
-	background-color: #45F0A2;
-}
+
 
 .main-title {
 	background-color: white;
@@ -104,13 +101,21 @@ iframe {
 	width: 19.5rem;
 }
 
+.main-eventos{
+	padding: 2rem;
+	background-color: #E1D37A;
+}
+
 .evento-title {
+	color:black;
 	font-size: 1.25rem;
-	margin-left: 8%;
+	margin-left: 4%;
 	margin-top: -3%;
 }
 
 .evento-descricao {
+	background-color: #2D61A6;
+	color:#000000;
 	font-size: 0.75rem;
 	display: grid;
 	margin-top: 1.25%;
@@ -130,20 +135,13 @@ iframe {
 	height: 1rem;
 }
 
-.lista-image {
-
-}
 
 /*CALENDAR:*/
 
 /*EVENTOS:*/
 
-.main_eventos {
-	background-color:  ;
-}
 
 .eventos-title {
-	background-color: white;
 	font-size: 1.4rem;
 	font-family: 'Domine', serif;
 	font-weight: bold;
@@ -160,6 +158,14 @@ iframe {
 	margin-left: .75rem;
 }
 
+.add {
+	color: red;
+	display: flex;
+	margin-left: 10rem;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
 .link-image {
 	display: flex;
 	justify-content: center;
@@ -173,13 +179,15 @@ iframe {
 
 .evento-title {
 	font-size: 1.25rem;
-	margin-left: 8%;
+	margin-left: 12%;
 	margin-top: -3%;
 }
 
 .evento-descricao {
 	font-size: 0.75rem;
 	display: grid;
+	padding: 1rem;
+	border-radius: 20px;
 	margin-top: 1.25%;
 	margin-left: 8%;
 	margin-bottom: 5%;
@@ -189,7 +197,7 @@ iframe {
 .evento-descricao li {
 	display: flex;
 	flex-direction: row;
-	padding: 0.15rem;
+	padding: 0.2rem;
 }
 
 .informacao-icon {
