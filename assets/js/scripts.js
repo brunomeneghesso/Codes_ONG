@@ -56,6 +56,7 @@ function showCalendar(month, year) {
                 let cell = document.createElement("td");
                 let cellText = document.createTextNode("");
                 cell.appendChild(cellText);
+                cell.setAttribute('href','https://www.google.com.br/')
                 row.appendChild(cell);
             }
             else if (date > daysInMonth) {
@@ -69,6 +70,7 @@ function showCalendar(month, year) {
                     cell.classList.add("bg-info");
                 } // color today's date
                 cell.appendChild(cellText);
+                cell.setAttribute('href','https://www.google.com.br/')
                 row.appendChild(cell);
                 date++;
             }
