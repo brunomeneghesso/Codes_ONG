@@ -56,7 +56,6 @@ function showCalendar(month, year) {
                 let cell = document.createElement("td");
                 let cellText = document.createTextNode("");
                 cell.appendChild(cellText);
-                cell.setAttribute('href','https://www.google.com.br/')
                 row.appendChild(cell);
             }
             else if (date > daysInMonth) {
@@ -65,12 +64,13 @@ function showCalendar(month, year) {
 
             else {
                 let cell = document.createElement("td");
-                let cellText = document.createTextNode(date);
+                let txt = date.toString()
+                let cellText = document.createTextNode(txt.link('https://www.google.com.br/'));
                 if (date === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
                     cell.classList.add("bg-info");
                 } // color today's date
                 cell.appendChild(cellText);
-                cell.setAttribute('href','https://www.google.com.br/')
+                //cell.setAttribute('href','https://www.google.com.br/');
                 row.appendChild(cell);
                 date++;
             }
