@@ -65,6 +65,21 @@ iframe {
 	opacity: 0.9;
 }
 
+.editar {
+	font-size: 1.2rem;
+	font-family: 'Domine', serif;
+	font-weight: bold;
+	display: flex;
+	background-color: #000000;
+	position: fixed;
+	width:95.5%;
+	bottom: 5px;
+	padding: 0.5em;
+	align-items: center;
+	justify-content: space-around;
+	border-radius: 50px;
+	opacity: 0.9;
+}
 
 .calendar-button {
 	width: 40px;
@@ -211,7 +226,7 @@ iframe {
 	height: 1.8rem;
 	padding: 2px;
 	background-color:pink;
-	border-radius: 40px;
+	border-radius: 160px;
 }
 
 .link-image {
