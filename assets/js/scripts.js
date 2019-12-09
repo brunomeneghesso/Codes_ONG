@@ -65,13 +65,22 @@ function showCalendar(month, year) {
             else {
                 let cell = document.createElement("td");
                 let txt = date.toString()
-                let cellText = document.createTextNode(txt.link('https://www.google.com.br/'));
+                let cellText = document.createTextNode(txt);//.link('https://www.google.com.br/'));
                 if (date === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
                     cell.classList.add("bg-info");
                 } // color today's date
+                //cellText.href = 'https://www.google.com.br/';
+                var link = document.createElement('link');
+                //inicio da tentativa
+                //link.type = 'text/css/html';
+                //link.rel = 'stylesheet';
+                //link.href = 'file:///C:/Users/bruno/Documents/2%20semestre/codes/Codes_ONG/main2.html';
+                //cell.appendChild(link);
+                //final da tentativa
+                row.appendChild(cell);
                 cell.appendChild(cellText);
                 //cell.setAttribute('href','https://www.google.com.br/');
-                row.appendChild(cell);
+                
                 date++;
             }
 
