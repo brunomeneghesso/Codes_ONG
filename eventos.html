@@ -36,49 +36,50 @@
 			</div>
 			{{#each eventos}}
 				<div class="eventos-menu">
-					<a class="link-image">
-						<img class="lista-image" src="assets/img/{{this.imagem}}.jpg" alt="evento crianças"> 
-					</a>
-					<div class="evento-title">
-						{{this.nome}}
-					</div>
-					<ul class="evento-descricao">
-						<li>
-							<h2 class="evento-informacao">
-								<img class="informacao-icon" src="assets/img/cal.png" alt="data">:
-							</h2>
-							<p>
-								{{this.data}}
-							</p>
-						</li>
-						<li>
-							<h2 class="evento-informacao">
-								<img class="informacao-icon" src="assets/img/local_pin.png" alt="local">:
-							</h2>
-							<p>
-								{{this.local}}
-							</p>
-						</li>
-						<li>
-							<h2 class="evento-informacao">
-								<img class="informacao-icon" src="assets/img/clock.png" alt="horário">:
-							</h2>
-							<p>
-								{{this.horario}}
-							</p>
-						</li>
-						<li>
-							<h2 class="evento-informacao">
-								<img class="informacao-icon" src="assets/img/description.png" alt="descrição">:
-							</h2>
-							<p>
-								{{this.descricao}}
-							</p>
-						</li>
-					</ul>
+					
+						<a class="link-image">
+							<img class="lista-image" src="assets/img/{{this.imagem}}.jpg" alt="evento crianças"> 
+						</a>
+						<div class="evento-title">
+							{{this.nome}}
+						</div>
+						<ul class="evento-descricao">
+							<li>
+								<h2 class="evento-informacao">
+									<img class="informacao-icon" src="assets/img/cal.png" alt="data">:
+								</h2>
+								<p>
+									{{this.data}}
+								</p>
+							</li>
+							<li>
+								<h2 class="evento-informacao">
+									<img class="informacao-icon" src="assets/img/local_pin.png" alt="local">:
+								</h2>
+								<p>
+									{{this.local}}
+								</p>
+							</li>
+							<li>
+								<h2 class="evento-informacao">
+									<img class="informacao-icon" src="assets/img/clock.png" alt="horário">:
+								</h2>
+								<p>
+									{{this.horario}}
+								</p>
+							</li>
+							<li>
+								<h2 class="evento-informacao">
+									<img class="informacao-icon" src="assets/img/description.png" alt="descrição">:
+								</h2>
+								<p>
+									{{this.descricao}}
+								</p>
+							</li>
+						</ul>
+					
 				</div>
-			{{/each}}
-				
+			{{/each}}	
 		</main>
 
 		<access class="access">
