@@ -5,7 +5,7 @@
 	<link href="assets/css/reset.css" rel="stylesheet">
 	<link href="assets/css/style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Domine|Lato|Nunito+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<script src="assets/js/codes.js"></script>
@@ -34,52 +34,174 @@
 					<img class="filtro" src="assets/img/filter.png" alt="filtro">
 				</a>
 			</div>
-			{{#each eventos}}
-				<div class="eventos-menu">
-					
-						<a class="link-image">
-							<img class="lista-image" src="assets/img/{{this.imagem}}.jpg" alt="evento crianças"> 
-						</a>
-						<div class="evento-title">
-							{{this.nome}}
-						</div>
-						<ul class="evento-descricao">
-							<li>
-								<h2 class="evento-informacao">
-									<img class="informacao-icon" src="assets/img/cal.png" alt="data">:
-								</h2>
-								<p>
-									{{this.data}}
-								</p>
-							</li>
-							<li>
-								<h2 class="evento-informacao">
-									<img class="informacao-icon" src="assets/img/local_pin.png" alt="local">:
-								</h2>
-								<p>
-									{{this.local}}
-								</p>
-							</li>
-							<li>
-								<h2 class="evento-informacao">
-									<img class="informacao-icon" src="assets/img/clock.png" alt="horário">:
-								</h2>
-								<p>
-									{{this.horario}}
-								</p>
-							</li>
-							<li>
-								<h2 class="evento-informacao">
-									<img class="informacao-icon" src="assets/img/description.png" alt="descrição">:
-								</h2>
-								<p>
-									{{this.descricao}}
-								</p>
-							</li>
-						</ul>
-					
+			<div class="eventos-menu">
+				<a class="link-image">
+					<img class="lista-image" src="assets/img/evento exemplo.jpg" alt="evento crianças"> 
+				</a>
+				<div class="evento-title">
+					Almoço Solidário
 				</div>
-			{{/each}}	
+				<ul class="evento-descricao">
+					<li>
+						<h2 class="evento-informacao">
+							<img class="informacao-icon" src="assets/img/cal.png" alt="data">:
+						</h2>
+						<p>
+							30/10
+						</p>
+					</li>
+					<li>
+						<h2 class="evento-informacao">
+							<img class="informacao-icon" src="assets/img/local_pin.png" alt="local">:
+						</h2>
+						<p>
+							Praça Buenos Aires, Higienópolis
+						</p>
+					</li>
+					<li>
+						<h2 class="evento-informacao">
+							<img class="informacao-icon" src="assets/img/clock.png" alt="horário">:
+						</h2>
+						<p>
+							10:30
+						</p>
+					</li>
+					<li>
+						<h2 class="evento-informacao">
+							<img class="informacao-icon" src="assets/img/description.png" alt="descrição">:
+						</h2>
+						<p>
+							Venha ajudar a preparar um almoço divertido e delicioso para as crianças!
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div class="eventos-menu">
+				<a class="link-image">
+					<img class="lista-image" src="assets/img/ingles.jpg" alt="evento crianças"> 
+				</a>
+				<div class="evento-title">
+					Aulas de Inglês para Idosos
+				</div>
+				<ul class="evento-descricao">
+					<li>
+						<h2 class="evento-informacao">
+							<img class="informacao-icon" src="assets/img/cal.png" alt="data">:
+						</h2>
+						<p>
+							12/12
+						</p>
+					</li>
+					<li>
+						<h2 class="evento-informacao">
+							<img class="informacao-icon" src="assets/img/local_pin.png" alt="local">:
+						</h2>
+						<p>
+							Casa de Repouso Mamma Mia, R. Arizona 594
+						</p>
+					</li>
+					<li>
+						<h2 class="evento-informacao">
+							<img class="informacao-icon" src="assets/img/clock.png" alt="horário">:
+						</h2>
+						<p>
+							15:30
+						</p>
+					</li>
+					<li>
+						<h2 class="evento-informacao">
+							<img class="informacao-icon" src="assets/img/description.png" alt="descrição">:
+						</h2>
+						<p>
+							Aprender novas línguas sempre foi muito importante para preservar a memória e melhorar a capacidade de aprendizado, portanto é muito importante que o aprendizado seja contínuo em todas as idades. Necessário nível intermediário de inglês.
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div class="eventos-menu">
+				<a class="link-image">
+					<img class="lista-image" src="assets/img/excel.jpg" alt="evento crianças"> 
+				</a>
+				<div class="evento-title">
+					Aulas de Excel para a Comunidade do Sapé
+				</div>
+				<ul class="evento-descricao">
+					<li>
+						<h2 class="evento-informacao">
+							<img class="informacao-icon" src="assets/img/cal.png" alt="data">:
+						</h2>
+						<p>
+							20, 21, 22 de Dezembro
+						</p>
+					</li>
+					<li>
+						<h2 class="evento-informacao">
+							<img class="informacao-icon" src="assets/img/local_pin.png" alt="local">:
+						</h2>
+						<p>
+							Distrito do Rio Pequeno, zona Oeste
+						</p>
+					</li>
+					<li>
+						<h2 class="evento-informacao">
+							<img class="informacao-icon" src="assets/img/clock.png" alt="horário">:
+						</h2>
+						<p>
+							12:00
+						</p>
+					</li>
+					<li>
+						<h2 class="evento-informacao">
+							<img class="informacao-icon" src="assets/img/description.png" alt="descrição">:
+						</h2>
+						<p>
+							A tecnologia tornou-se indispensável no mercado de trabalho, coisas simples para muitos como organizar uma planilha financeira pode ser o empecilho para conquistar uma vaga e uma empresa para quem não tem o conhecimento em Excel. Por isso é importante sua ajuda como monitor em aulas voluntárias nesta ferramenta, é necessário apenas um nível básico.
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div class="eventos-menu">
+				<a class="link-image">
+					<img class="lista-image" src="assets/img/meio ambiente.jpg" alt="evento crianças"> 
+				</a>
+				<div class="evento-title">
+					Caminhada da Conscientização
+				</div>
+				<ul class="evento-descricao">
+					<li>
+						<h2 class="evento-informacao">
+							<img class="informacao-icon" src="assets/img/cal.png" alt="data">:
+						</h2>
+						<p>
+							29/10
+						</p>
+					</li>
+					<li>
+						<h2 class="evento-informacao">
+							<img class="informacao-icon" src="assets/img/local_pin.png" alt="local">:
+						</h2>
+						<p>
+							Parque Ecológico do Tietê, Vila Santo Henrique
+						</p>
+					</li>
+					<li>
+						<h2 class="evento-informacao">
+							<img class="informacao-icon" src="assets/img/clock.png" alt="horário">:
+						</h2>
+						<p>
+							15:00
+						</p>
+					</li>
+					<li>
+						<h2 class="evento-informacao">
+							<img class="informacao-icon" src="assets/img/description.png" alt="descrição">:
+						</h2>
+						<p>
+							Aprenda mais sobre a natureza e ajude na organização e dinâmica do evento de conscientização sobre o meio ambiente.
+						</p>
+					</li>
+				</ul>
+			</div>
 		</main>
 
 		<access class="access">
