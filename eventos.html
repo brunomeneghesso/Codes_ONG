@@ -37,92 +37,55 @@
 				<a href="filtro.html">
 					<img class="filtro" src="assets/img/filter.png" alt="filtro">
 				</a>
-			</div>
-
-			<div class="eventos-menu">
-				<a class="link-image">
-					<img class="lista-image" src="assets/img/evento exemplo.jpg" alt="evento crianças"> 
-				</a>
-				<div class="evento-title">
-					Almoço Solidário
+				<div class="teste">
+					{{teste}}
 				</div>
-				<ul class="evento-descricao">
-					<li>
-						<h2 class="evento-informacao">
-							<img class="informacao-icon" src="assets/img/cal.png" alt="data">:
-						</h2>
-						<p>
-							30/11
-						</p>
-					</li>
-					<li>
-						<h2 class="evento-informacao">
-							<img class="informacao-icon" src="assets/img/local_pin.png" alt="local">:
-						</h2>
-						<p>
-							Praça Buenos Aires, Higienópolis
-						</p>
-					</li>
-					<li>
-						<h2 class="evento-informacao">
-							<img class="informacao-icon" src="assets/img/clock.png" alt="horário">:
-						</h2>
-						<p>
-							10:30
-						</p>
-					</li>
-					<li>
-						<h2 class="evento-informacao">
-							<img class="informacao-icon" src="assets/img/description.png" alt="descrição">:
-						</h2>
-						<p>
-							Venha ajudar a preparar um almoço divertido e delicioso para as crianças!
-						</p>
-					</li>
-				</ul>
 			</div>
-			<div class="lista-eventos">
-				<a class="link-image">
-					<img class="lista-image" src="assets/img/meio ambiente.jpg" alt="evento crianças"> 
-				</a>
-				<div class="evento-title">
-					Caminhada da Conscientização
+			{{#each eventos}}
+				<div class="eventos-menu">
+					<a class="link-image">
+						<img class="lista-image" src="assets/img/{{this.imagem}}.jpg" alt="evento crianças"> 
+					</a>
+					<div class="evento-title">
+						{{this.nome}}
+					</div>
+					<ul class="evento-descricao">
+						<li>
+							<h2 class="evento-informacao">
+								<img class="informacao-icon" src="assets/img/cal.png" alt="data">:
+							</h2>
+							<p>
+								{{this.data}}
+							</p>
+						</li>
+						<li>
+							<h2 class="evento-informacao">
+								<img class="informacao-icon" src="assets/img/local_pin.png" alt="local">:
+							</h2>
+							<p>
+								{{this.local}}
+							</p>
+						</li>
+						<li>
+							<h2 class="evento-informacao">
+								<img class="informacao-icon" src="assets/img/clock.png" alt="horário">:
+							</h2>
+							<p>
+								{{this.horario}}
+							</p>
+						</li>
+						<li>
+							<h2 class="evento-informacao">
+								<img class="informacao-icon" src="assets/img/description.png" alt="descrição">:
+							</h2>
+							<p>
+								{{this.descricao}}
+							</p>
+						</li>
+					</ul>
 				</div>
-				<ul class="evento-descricao">
-					<li>
-						<h2 class="evento-informacao">
-							<img class="informacao-icon" src="assets/img/cal.png" alt="data">:
-						</h2>
-						<p>
-							29/10
-						</p>
-					</li>
-					<li>
-						<h2 class="evento-informacao">
-							<img class="informacao-icon" src="assets/img/local_pin.png" alt="local">:
-						</h2>
-						<p>
-							Parque Ecológico do Tietê, Vila Santo Henrique
-						</p>
-					</li>
-					<li>
-						<h2 class="evento-informacao">
-							<img class="informacao-icon" src="assets/img/clock.png" alt="horário">:
-						</h2>
-						<p>
-							15:00
-						</p>
-					</li>
-					<li>
-						<h2 class="evento-informacao">
-							<img class="informacao-icon" src="assets/img/description.png" alt="descrição">:
-						</h2>
-						<p>
-							Aprenda mais sobre a natureza e ajude na organização e dinâmica do evento de conscientização sobre o meio ambiente.
-						</p>
-					</li>
-				</ul>
-			</div>
+			{{/each}}
+				
 		</main>
 
 		<access class="access">
