@@ -178,8 +178,8 @@ iframe {
 .informacao-icon {
 	width: 1rem;
 	height: 1rem;
+	border-radius: 100px;
 }
-
 
 /*CALENDAR:*/
 
@@ -256,6 +256,7 @@ iframe {
 .informacao-icon {
 	width: 1rem;
 	height: 1rem;
+	border-radius: 100px;
 }
 
 .lista-image {
@@ -343,6 +344,21 @@ iframe {
 
 .body_import {
 	display: flex
+}
+
+.import-img2 {
+	display: flex;
+	justify-content: center;
+	margin-left: 5.5rem;
+	width: 50%;
+}
+
+.import-img3 {
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	margin-left: 2.5rem;
+	margin-bottom: 2.5rem;
 }
 
 .textoo {
